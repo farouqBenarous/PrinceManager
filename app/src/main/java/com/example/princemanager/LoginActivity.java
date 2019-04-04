@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     public void Login (View view) {
-        Toast.makeText(getApplicationContext(), "Sign up button is working", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Sign up button s working", Toast.LENGTH_SHORT).show();
          Intent intent = new Intent(getApplicationContext() , MainActivity.class);
          startActivity(intent);
     }
