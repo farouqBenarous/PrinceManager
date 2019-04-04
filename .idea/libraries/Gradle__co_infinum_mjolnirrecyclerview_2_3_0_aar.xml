@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: co.infinum:mjolnirrecyclerview:2.3.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mjolnirrecyclerview-2.3.0.aar/660b7e9c4f54493bd37dabe00f52075f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mjolnirrecyclerview-2.3.0.aar/660b7e9c4f54493bd37dabe00f52075f/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/co.infinum/mjolnirrecyclerview/2.3.0/bc6ad6d71a6b0031cfedd335b760da79559767b6/mjolnirrecyclerview-2.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
