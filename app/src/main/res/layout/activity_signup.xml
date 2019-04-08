@@ -10,7 +10,18 @@
     android:padding="10dp"
     >
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
     <EditText
+        android:id="@+id/Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/backgroundradiuswhite"
@@ -21,6 +32,7 @@
 
 
     <EditText
+        android:id="@+id/FullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -30,6 +42,7 @@
         />
 
     <EditText
+        android:id="@+id/UserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -40,12 +53,13 @@
 
 
     <EditText
+        android:id="@+id/PhoneNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:background="@drawable/backgroundradiuswhite"
         android:layout_marginTop="20dp"
-        android:hint="Phone number"
+        android:hint="Phone number : +351......."
         android:inputType="phone"
         />
 
@@ -53,10 +67,14 @@
     android:id="@+id/nice_spinner"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"/>
+    android:layout_margin="16dp"
+    android:background="@drawable/backgroundradiuswhite"
+
+        />
 
 
     <EditText
+        android:id="@+id/Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/backgroundradiuswhite"
@@ -67,6 +85,7 @@
         />
 
     <EditText
+        android:id="@+id/ConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/backgroundradiuswhite"
@@ -90,11 +109,18 @@
 
 
     <ProgressBar
+        android:id="@+id/progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
 
         />
+
+</LinearLayout>
+
+    </ScrollView>
+
 
 
 </LinearLayout>

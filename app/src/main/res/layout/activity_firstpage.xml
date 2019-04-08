@@ -15,6 +15,7 @@
       android:layout_width="match_parent"
       android:layout_height="450dp"
       android:autoStart="true"
+
       >
 
        <LinearLayout
@@ -31,15 +32,14 @@
                android:layout_height="203dp"
                android:layout_gravity="center_horizontal"
                android:layout_marginTop="150dp"
-               android:src="@drawable/feature1"
                />
 
            <TextView
                android:id="@+id/FeatureText1"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="The way a team plays as a whole determines its success.
-"
+               android:text="If you want to lift yourself up, lift up someone else. – Booker T. Washington "
+               android:textStyle="bold|italic"
                android:textAlignment="center"
                android:gravity="center_horizontal"
                android:padding="10dp"
@@ -72,7 +72,8 @@
               android:id="@+id/FeatureText2"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="Feautre 2 of the app"
+              android:text="Teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability. – Patrick Lencioni"
+              android:textStyle="bold|italic"
               android:textAlignment="center"
               android:gravity="center_horizontal"
               android:padding="10dp"
@@ -105,7 +106,8 @@
               android:id="@+id/FeatureText3"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="Feaure 3 of the app "
+              android:text="Alone we can do so little; together we can do so much. – Helen Keller"
+              android:textStyle="bold|italic"
               android:textAlignment="center"
               android:gravity="center_horizontal"
               android:padding="10dp"
@@ -156,40 +158,60 @@
 </LinearLayout>
 
 
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+       android:layout_marginTop="20dp"
         >
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginRight="20dp"
+           >
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:text="Login"
+               android:onClick="Login"
+               android:background="@drawable/backgroundradius"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right"
+           android:layout_marginLeft="20dp"
+
+           >
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginLeft="80dp"
-            android:text="Login"
-            android:onClick="Login"
-            android:background="@drawable/backgroundradius"
-
-
-
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:layout_marginLeft="60dp"
             android:text="Signup"
             android:onClick="Signup"
             android:background="@drawable/backgroundradius"
 
             />
+       </LinearLayout>
 
-    </LinearLayout>
+   </LinearLayout>
 
 
 </LinearLayout>

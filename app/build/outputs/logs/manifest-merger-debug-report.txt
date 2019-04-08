@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-31:12
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-34:12
 MERGED from [com.android.support:design:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/64f92cf75fcf9c92c83ebd3f81c29971/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.arcadefire:nice-spinner:1.3.8] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/nice-spinner-1.3.8.aar/399d95d1e03d564f39319064832a781d/AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/AndroidManifest.xml:17:1-22:12
@@ -11,6 +11,7 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/benar
 MERGED from [com.android.support:support-v4:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/a55aa772a99da57b9068b964427c9fd2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.volley:volley:1.1.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/1c211108d1cad742de1c99e246ca0c22/AndroidManifest.xml:2:1-11:12
 MERGED from [co.infinum:mjolnirrecyclerview:2.3.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/mjolnirrecyclerview-2.3.0.aar/660b7e9c4f54493bd37dabe00f52075f/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/220e09e7cbb2d697a73e6813aab9109f/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:support-fragment:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ddcf46bd918411a665fe50598a8899d3/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/60aca7ffe3d1ac38e8380014b48c9dea/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/52f5b67777b5870de479b7d96e6d7e80/AndroidManifest.xml:17:1-22:12
@@ -32,6 +33,7 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /home/benarousfarou
 MERGED from [com.android.support:cursoradapter:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a28d6ef8bebbd4418ae8f700b5381701/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/ce6d03b9943f2ede5d9f922bec268f60/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/c4f2d4c66f2b9043e253790bb7886895/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/9366e76fc525f1d118b8d9be3e458200/AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/42adac793034cbb42a3a042e81747a4a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/3013d6b9e94d726a937484b522b96c08/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/0de00bc46caadde416db3ef19a44c6a7/AndroidManifest.xml:17:1-22:12
@@ -40,20 +42,20 @@ MERGED from [com.android.support:interpolator:28.0.0] /home/benarousfarouk/.grad
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/ed1ef19e939a637563b8e044c1f816c4/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/8269aa0d48a4a4848bb5c6c5e5566d65/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3d8c6161f485cd63e796fdb11e6f9960/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml
 		INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-31:12
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-34:12
 		INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-31:12
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:1-34:12
 		INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:2:11-69
@@ -70,25 +72,33 @@ ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main
 	android:name
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:7:22-69
 application
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:9:5-29:19
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:9:5-32:19
 MERGED from [com.android.support:design:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/64f92cf75fcf9c92c83ebd3f81c29971/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/64f92cf75fcf9c92c83ebd3f81c29971/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/3fddf40f513471122f765bf3dea3d93a/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/3fddf40f513471122f765bf3dea3d93a/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/1c211108d1cad742de1c99e246ca0c22/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/1c211108d1cad742de1c99e246ca0c22/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/220e09e7cbb2d697a73e6813aab9109f/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/220e09e7cbb2d697a73e6813aab9109f/AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:support-compat:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/695a9df3c20e8e294589226ad80a6159/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/695a9df3c20e8e294589226ad80a6159/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/eef3d37da586a3ea15a12883b5bfa402/AndroidManifest.xml:22:5-23:19
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/eef3d37da586a3ea15a12883b5bfa402/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/9366e76fc525f1d118b8d9be3e458200/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/9366e76fc525f1d118b8d9be3e458200/AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/695a9df3c20e8e294589226ad80a6159/AndroidManifest.xml:22:18-91
 	android:supportsRtl
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:12:9-41
+	android:hardwareAccelerated
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:16:9-44
 	android:roundIcon
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:13:9-54
+	android:largeHeap
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:17:9-33
 	android:icon
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
@@ -96,35 +106,35 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /home/benarousfarou
 	android:theme
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:15:9-52
 activity#com.example.princemanager.MainActivity
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:16:9-19:59
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:19:9-22:59
 	android:label
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:18:13-56
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:21:13-56
 	android:theme
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:19:13-56
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:22:13-56
 	android:name
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:17:13-41
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:20:13-41
 activity#com.example.princemanager.SignupActivity
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:20:9-52
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:23:9-52
 	android:name
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:20:19-49
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:23:19-49
 activity#com.example.princemanager.LoginActivity
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:21:9-51
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:24:9-51
 	android:name
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:21:19-48
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:24:19-48
 activity#com.example.princemanager.FirstPageActivity
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:22:9-28:20
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:25:9-31:20
 	android:name
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:22:19-52
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:25:19-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:23:13-27:29
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:26:17-77
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:29:27-74
 uses-sdk
 INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml
@@ -143,6 +153,8 @@ MERGED from [com.android.volley:volley:1.1.0] /home/benarousfarouk/.gradle/cache
 MERGED from [com.android.volley:volley:1.1.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/1c211108d1cad742de1c99e246ca0c22/AndroidManifest.xml:7:5-43
 MERGED from [co.infinum:mjolnirrecyclerview:2.3.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/mjolnirrecyclerview-2.3.0.aar/660b7e9c4f54493bd37dabe00f52075f/AndroidManifest.xml:7:5-9:41
 MERGED from [co.infinum:mjolnirrecyclerview:2.3.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/mjolnirrecyclerview-2.3.0.aar/660b7e9c4f54493bd37dabe00f52075f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/220e09e7cbb2d697a73e6813aab9109f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/220e09e7cbb2d697a73e6813aab9109f/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-fragment:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ddcf46bd918411a665fe50598a8899d3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ddcf46bd918411a665fe50598a8899d3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/60aca7ffe3d1ac38e8380014b48c9dea/AndroidManifest.xml:20:5-44
@@ -185,6 +197,8 @@ MERGED from [com.android.support:cardview-v7:28.0.0] /home/benarousfarouk/.gradl
 MERGED from [com.android.support:cardview-v7:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/ce6d03b9943f2ede5d9f922bec268f60/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/c4f2d4c66f2b9043e253790bb7886895/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/c4f2d4c66f2b9043e253790bb7886895/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/9366e76fc525f1d118b8d9be3e458200/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/9366e76fc525f1d118b8d9be3e458200/AndroidManifest.xml:5:5-7:41
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/42adac793034cbb42a3a042e81747a4a/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/42adac793034cbb42a3a042e81747a4a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/3013d6b9e94d726a937484b522b96c08/AndroidManifest.xml:20:5-44
