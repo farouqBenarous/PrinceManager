@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SignupActivity"
     android:orientation="vertical"
-    android:background="#5ED2E9"
+    android:background="@color/colorPrimary"
     android:padding="10dp"
     >
 

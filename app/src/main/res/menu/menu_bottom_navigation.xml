@@ -1,0 +1,43 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/board"
+        android:enabled="true"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Board"
+        android:checked="true"
+
+        />
+    <item
+        android:id="@+id/inbox"
+        android:enabled="true"
+        android:icon="@drawable/ic_inbox"
+        android:title="Inbox"
+        android:checked="true"
+
+        />
+    <item
+    android:id="@+id/notification"
+    android:enabled="true"
+    android:icon="@drawable/ic_notifications"
+    android:title="Notification"
+        android:checked="true"
+
+
+        />
+
+    <item
+        android:id="@+id/contact"
+        android:enabled="true"
+        android:icon="@drawable/ic_contact"
+        android:title="contact "
+        android:checked="true"
+        />
+
+
+
+
+
+</menu>

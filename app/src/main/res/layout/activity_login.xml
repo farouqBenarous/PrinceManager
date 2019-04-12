@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:orientation="vertical"
-    android:background="#5ED2E9"
+    android:background="@color/colorPrimary"
     android:layout_gravity="center_horizontal"
     android:padding="10dp"
     >
@@ -23,11 +23,12 @@
 
 
     <ImageView
+        android:padding="40dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"
+        android:layout_height="250dp"
+        android:src="@drawable/applogo"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
         />
 
     <EditText
@@ -87,6 +88,17 @@
         android:background="@drawable/backgroundradius"
         />
 
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:text="gohome"
+                android:onClick="gohome"
+                android:background="@drawable/backgroundradius"
+                />
         </LinearLayout>
 
     </ScrollView>

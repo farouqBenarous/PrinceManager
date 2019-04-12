@@ -27,18 +27,30 @@ public class FirstPageActivity extends AppCompatActivity {
         viewFlipper = findViewById(R.id.viewSwitcher);
         progressBar = (ProgressBar ) findViewById(R.id.progressbar);
         imageView1 = (ImageView) findViewById(R.id.ImageFeature1) ;
+        imageView2 = (ImageView) findViewById(R.id.ImageFeature2) ;
+        imageView3 = (ImageView) findViewById(R.id.ImageFeature3) ;
+
+
 
 
         viewFlipper.setFlipInterval(20000);
         viewFlipper.startFlipping();
 
         Picasso.with(getApplicationContext())
-                .load("https://www.google.pt/search?q=teamwork&client=opera&hs=F8E&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjZiuqw78DhAhWvx4UKHUUbD68Q_AUIDigB&biw=1326&bih=605#imgrc=5k9Nn6gXY5ZhUM:")
-                .resize(50, 50)
-                .centerCrop()
+                .load("https://www.industryweek.com/sites/industryweek.com/files/styles/article_featured_retina/public/uploads/2017/05/teamwork.jpg?itok=U5ZihnwP")
                 .into(imageView1);
 
-                        // Checkif the token exist in the database or not
+        //images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=763&q=80
+
+        Picasso.with(getApplicationContext())
+                .load("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=763&q=80")
+                .into(imageView2);
+
+        Picasso.with(getApplicationContext())
+                .load("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80")
+                .into(imageView3);
+
+        // Checkif the token exist in the database or not
 
     }
 

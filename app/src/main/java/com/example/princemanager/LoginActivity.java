@@ -60,11 +60,11 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         // method to check if the  password is correct or not send an http request and return the hash and compare it
+
         if (! PasswordText.equals(RightPassword)) {
              password.setError("Wrong Password !");
             progressBar.setVisibility(View.INVISIBLE);
-            return;
-        }
+            return;  }
 
         if (checked) {
             // Create a token in an sqlite database
@@ -74,6 +74,14 @@ public class LoginActivity extends AppCompatActivity {
 
         Intent intent = new Intent(getApplicationContext() , MainActivity.class);
         startActivity(intent);
+
+    }
+
+    public void gohome(View view) {
+
+        Intent intent = new Intent(getApplicationContext() , MainActivity.class);
+        startActivity(intent);
+
 
     }
 

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".FirstPageActivity"
     android:orientation="vertical"
-    android:background="#5ED2E9"
+    android:background="@color/colorPrimary"
+    android:padding="15dp"
     >
 
 
@@ -141,8 +142,10 @@
          android:layout_marginRight="50dp"
           android:onClick="Privous"
           android:rotation="180"
-          android:src="@mipmap/ic_shortcut_navigate_next"
-          android:text="Privous" />
+          android:src="@drawable/ic_next"
+          android:text="Privous"
+          android:background="@color/colorPrimary"
+          />
 
       <ImageButton
           android:layout_width="46dp"
@@ -151,8 +154,9 @@
           android:gravity="center"
           android:layout_marginLeft="50dp"
           android:onClick="Next"
-          android:src="@mipmap/ic_shortcut_navigate_next"
+          android:src="@drawable/ic_next"
           android:text="next"
+          android:background="@color/colorPrimary"
 
           />
 </LinearLayout>
@@ -163,23 +167,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:layout_gravity="center"
         android:gravity="center"
-       android:layout_marginTop="20dp"
-        >
+       android:layout_marginTop="20dp">
        <LinearLayout
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:orientation="vertical"
            android:layout_gravity="center_horizontal"
-           android:layout_marginRight="20dp"
-           >
+           android:layout_marginRight="20dp">
            <Button
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
@@ -187,17 +188,14 @@
                android:textColor="@color/white"
                android:text="Login"
                android:onClick="Login"
-               android:background="@drawable/backgroundradius"
-               />
+               android:background="@drawable/backgroundradius" />
        </LinearLayout>
 
        <LinearLayout
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_gravity="right"
-           android:layout_marginLeft="20dp"
-
-           >
+           android:layout_marginLeft="20dp" >
 
         <Button
             android:layout_width="wrap_content"
@@ -206,9 +204,7 @@
             android:textColor="@color/white"
             android:text="Signup"
             android:onClick="Signup"
-            android:background="@drawable/backgroundradius"
-
-            />
+            android:background="@drawable/backgroundradius" />
        </LinearLayout>
 
    </LinearLayout>

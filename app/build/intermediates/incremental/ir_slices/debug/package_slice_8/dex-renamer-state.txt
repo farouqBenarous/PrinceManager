@@ -1,4 +1,0 @@
-#Wed Apr 03 16:32:19 WEST 2019
-base.0=/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/transforms/dexMerger/debug/8
-path.0=classes.dex
-renamed.0=classes.dex
