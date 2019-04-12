@@ -66,9 +66,6 @@ public class FragmentBoard extends Fragment {
                         break;
 
 
-
-
-
                 } }});
 
 
