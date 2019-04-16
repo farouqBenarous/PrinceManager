@@ -86,6 +86,7 @@
         android:text="Login"
         android:onClick="Login"
         android:background="@drawable/backgroundradius"
+        android:textStyle="bold|italic"
         />
 
             <Button
@@ -98,6 +99,8 @@
                 android:text="gohome"
                 android:onClick="gohome"
                 android:background="@drawable/backgroundradius"
+                android:textStyle="bold|italic"
+
                 />
         </LinearLayout>
 

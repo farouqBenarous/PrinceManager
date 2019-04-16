@@ -16,6 +16,7 @@ MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/benarousfarouk/.gradle
 MERGED from [com.android.support:support-fragment:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/ddcf46bd918411a665fe50598a8899d3/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/52f5b67777b5870de479b7d96e6d7e80/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/ce6d03b9943f2ede5d9f922bec268f60/AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/ed93db8a37fa27a9adb767c94341a9ce/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/60aca7ffe3d1ac38e8380014b48c9dea/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/9e79ba094b3cef3d128c0c61e4e0bbbb/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/7765ccc9a3e4710dcba6de75d1e8d1e2/AndroidManifest.xml:17:1-22:12
@@ -88,6 +89,8 @@ MERGED from [com.android.volley:volley:1.1.0] /home/benarousfarouk/.gradle/cache
 MERGED from [com.android.volley:volley:1.1.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/1c211108d1cad742de1c99e246ca0c22/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/220e09e7cbb2d697a73e6813aab9109f/AndroidManifest.xml:11:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/220e09e7cbb2d697a73e6813aab9109f/AndroidManifest.xml:11:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/ed93db8a37fa27a9adb767c94341a9ce/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/ed93db8a37fa27a9adb767c94341a9ce/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/695a9df3c20e8e294589226ad80a6159/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/695a9df3c20e8e294589226ad80a6159/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/eef3d37da586a3ea15a12883b5bfa402/AndroidManifest.xml:22:5-23:19
@@ -112,18 +115,22 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/benarousfarouk/.g
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
 		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:18:9-52
+activity#com.example.princemanager.ProfileEditActivity
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:19:9-66
+	android:name
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:19:19-54
 activity#com.example.princemanager.ProfileActivity
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:19:9-62
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:20:9-53
 	android:name
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:19:19-50
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:20:19-50
 activity#com.example.princemanager.MainActivity
-ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:20:9-24:15
+ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:21:9-24:47
 	android:label
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:22:13-56
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:23:13-56
 	android:theme
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:23:13-44
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:24:13-44
 	android:name
-		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:21:13-41
+		ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:22:13-41
 activity#com.example.princemanager.SignupActivity
 ADDED from /home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/AndroidManifest.xml:25:9-52
 	android:name
@@ -174,6 +181,8 @@ MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/benarousfarouk/.g
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/52f5b67777b5870de479b7d96e6d7e80/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/ce6d03b9943f2ede5d9f922bec268f60/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/ce6d03b9943f2ede5d9f922bec268f60/AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/ed93db8a37fa27a9adb767c94341a9ce/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/circleimageview-2.2.0.aar/ed93db8a37fa27a9adb767c94341a9ce/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/60aca7ffe3d1ac38e8380014b48c9dea/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/60aca7ffe3d1ac38e8380014b48c9dea/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] /home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/9e79ba094b3cef3d128c0c61e4e0bbbb/AndroidManifest.xml:20:5-44

@@ -26,6 +26,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar" >
+        <activity android:name="com.example.princemanager.ProfileEditActivity" />
         <activity android:name="com.example.princemanager.ProfileActivity" />
         <activity
             android:name="com.example.princemanager.MainActivity"

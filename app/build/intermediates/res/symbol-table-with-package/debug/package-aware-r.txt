@@ -152,6 +152,11 @@ attr chipStartPadding
 attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
+attr civ_fill_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1169,9 +1174,6 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable drop_down_shadow
-drawable feature1
-drawable feature2
-drawable feature3
 drawable ic_arrow_drop_down_black_24dp
 drawable ic_contact
 drawable ic_dashboard
@@ -1223,6 +1225,7 @@ id ImageFeature1
 id ImageFeature2
 id ImageFeature3
 id META
+id NewPassword
 id Password
 id PhoneNumber
 id SHIFT
@@ -1287,6 +1290,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id edit
 id edit_query
 id email
 id end
@@ -1303,10 +1307,13 @@ id filled
 id fixed
 id forever
 id framelayout
+id fullname
+id gender
 id ghost_view
 id gone
 id group_divider
 id groups
+id header_cover_image
 id home
 id homeAsUp
 id icon
@@ -1320,6 +1327,7 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id layout
 id left
 id line1
 id line3
@@ -1327,6 +1335,7 @@ id listMode
 id list_item
 id listview
 id listviewboard
+id location
 id masked
 id media_actions
 id message
@@ -1354,6 +1363,8 @@ id parent_matrix
 id password
 id percent
 id pin
+id profile_layout
+id profilepic
 id progress_circular
 id progress_horizontal
 id progressbar
@@ -1408,6 +1419,7 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id teams
 id text
 id text2
 id textSpacerNoButtons
@@ -1434,6 +1446,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id viewSwitcher
 id view_offset_helper
 id visible
@@ -1492,6 +1505,7 @@ layout activity_firstpage
 layout activity_login
 layout activity_main
 layout activity_profile
+layout activity_profile_edit
 layout activity_signup
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2142,6 +2156,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipStartPadding chipStrokeColor chipStrokeWidth closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible hideMotionSpec iconEndPadding iconStartPadding rippleColor showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color civ_fill_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha
