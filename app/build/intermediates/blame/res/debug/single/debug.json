@@ -500,6 +500,10 @@
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-ldrtl-xxxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable_backgroundradiusitems.xml.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/drawable/backgroundradiusitems.xml"
+    },
+    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
     },
@@ -2038,6 +2042,10 @@
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_material.xml.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_item_notification.xml.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/layout/item_notification.xml"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",

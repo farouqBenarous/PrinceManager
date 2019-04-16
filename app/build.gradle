@@ -56,5 +56,8 @@ dependencies {
     // circle image
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 
+    // Recycler view
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
 
 }

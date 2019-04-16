@@ -1165,6 +1165,7 @@ drawable arrow
 drawable avd_hide_password
 drawable avd_show_password
 drawable backgroundradius
+drawable backgroundradiusitems
 drawable backgroundradiuswhite
 drawable bottom_nav_icon_color_selector
 drawable design_bottom_navigation_item_background
@@ -1369,6 +1370,7 @@ id progress_circular
 id progress_horizontal
 id progressbar
 id radio
+id recyclerNotification
 id right
 id right_icon
 id right_side
@@ -1430,7 +1432,9 @@ id text_view_spinner
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id textnotification
 id time
+id timenotification
 id title
 id titleDividerNoCustom
 id title_template
@@ -1525,6 +1529,7 @@ layout fragment_fragment_board
 layout fragment_fragment_contact
 layout fragment_fragment_inbox
 layout fragment_notifaction
+layout item_notification
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
