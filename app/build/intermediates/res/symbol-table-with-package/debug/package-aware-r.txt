@@ -1309,6 +1309,7 @@ id fixed
 id forever
 id framelayout
 id fullname
+id fullnameusername
 id gender
 id ghost_view
 id gone
@@ -1334,7 +1335,6 @@ id line1
 id line3
 id listMode
 id list_item
-id listview
 id listviewboard
 id location
 id masked
@@ -1366,10 +1366,12 @@ id percent
 id pin
 id profile_layout
 id profilepic
+id profleimage
 id progress_circular
 id progress_horizontal
 id progressbar
 id radio
+id recyclerContact
 id recyclerNotification
 id right
 id right_icon
@@ -1529,6 +1531,7 @@ layout fragment_fragment_board
 layout fragment_fragment_contact
 layout fragment_fragment_inbox
 layout fragment_notifaction
+layout item_contact
 layout item_notification
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include

@@ -7,6 +7,8 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,8 +26,7 @@ import java.util.Objects;
  */
 public class FragmentContact extends Fragment {
 
-    ListView listView;
-    List<String> list= new ArrayList<String>();
+    ArrayList<ModelUser> listusers;
 
     public FragmentContact() {}
 
@@ -34,14 +35,17 @@ public class FragmentContact extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        listView = (ListView) Objects.requireNonNull(getView()).findViewById(R.id.listview);
-        for(int i=0;i<10;i++)
-        {
-            list.add("foo"+i);
-        }
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerContact);
+        // Initialize contacts
+        listusers = ModelUser.createContactsList(20);
+        // Create adapter passing in the sample user data
+        AdapterContact adapter = new AdapterContact(listusers);
+        // Attach the adapter to the recyclerview to populate items
+        recyclerView.setAdapter(adapter);
+        // Set layout manager to position the items
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        // That's all!
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(Objects.requireNonNull(getContext()),android.R.layout.simple_list_item_1);
-        listView.setAdapter(adapter);
     }
 
     @Override
