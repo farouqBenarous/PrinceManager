@@ -16,12 +16,16 @@ import android.widget.ListView;
 
 import java.util.Objects;
 
+@TargetApi(Build.VERSION_CODES.KITKAT)
+@RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView BottNav;
     FragmentBoard fragmentBoard = new FragmentBoard();
+    FragmentSettings fragmentSettings = new FragmentSettings();
     FragmentInbox fragmentInbox = new FragmentInbox();
     FragmentNotifaction fragmentNotifaction = new FragmentNotifaction();
     FragmentContact fragmentContact = new FragmentContact();
+
     FragmentManager transaction ;
 
     // contact fragment attribuets
@@ -65,6 +69,10 @@ public class MainActivity extends AppCompatActivity {
                                 transaction = getSupportFragmentManager();
                                 transaction.beginTransaction().replace(R.id.framelayout, fragmentContact).commit();
                                 break;
+                            case R.id.settings:
+                                transaction = getSupportFragmentManager();
+                                transaction.beginTransaction().replace(R.id.framelayout, fragmentSettings).commit();
+                                break;
 
                         }
                         return false;
@@ -79,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
 
     // Fragment Contact Board
 

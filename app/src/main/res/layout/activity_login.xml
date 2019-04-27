@@ -76,18 +76,31 @@
 
         />
 
-    <Button
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:textColor="@color/white"
-        android:text="Login"
-        android:onClick="Login"
-        android:background="@drawable/backgroundradius"
-        android:textStyle="bold|italic"
-        />
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:text="Login"
+                android:onClick="Login"
+                android:background="@drawable/backgroundradius"
+                android:textStyle="bold|italic"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:text="You don't Have an Account Signup Here"
+                android:onClick="Gosignup"
+                android:textStyle="bold|italic"
+                android:background="@color/colorPrimary" />
 
             <Button
                 android:layout_width="180dp"

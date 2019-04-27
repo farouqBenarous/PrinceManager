@@ -23,4 +23,19 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="settingsmenu">
+        <item>Application Settings</item>
+        <item>About</item>
+        <item>Contact</item>
+        <item>Rate the ap</item>
+    </string-array>
+
+
+    <string-array name="boardsmenu">
+        <item>Projects</item>
+        <item>Tasks</item>
+        <item>My teams</item>
+    </string-array>
+
 </resources>

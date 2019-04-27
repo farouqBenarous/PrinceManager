@@ -27,6 +27,8 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array boardsmenu
+array settingsmenu
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1193,6 +1195,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_next
 drawable ic_notifications
 drawable ic_person
+drawable ic_settings
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1336,6 +1339,7 @@ id line3
 id listMode
 id list_item
 id listviewboard
+id listviewsettings
 id location
 id masked
 id media_actions
@@ -1397,6 +1401,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id settings
 id shortcut
 id showCustom
 id showHome
@@ -1530,6 +1535,7 @@ layout design_text_input_password_icon
 layout fragment_fragment_board
 layout fragment_fragment_contact
 layout fragment_fragment_inbox
+layout fragment_fragment_settings
 layout fragment_notifaction
 layout item_contact
 layout item_notification

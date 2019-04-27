@@ -26,9 +26,7 @@ import java.util.Objects;
 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class FragmentBoard extends Fragment {
 
-    ListView listView;
-    List<String> list= new ArrayList<String>();
-    ArrayAdapter<String> adapter;
+    String[] Menu;
 
 
     public FragmentBoard() {
@@ -43,31 +41,33 @@ public class FragmentBoard extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        listView = (ListView) Objects.requireNonNull(getView()).findViewById(R.id.listviewboard);
-        adapter = new ArrayAdapter<String>(Objects.requireNonNull(getContext()),android.R.layout.simple_list_item_1);
-        list.add("Projects");
-        list.add("Tasks");
-        listView.setAdapter(adapter);
+        ListView listView = (ListView) view.findViewById(R.id.listviewboard);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position)
-                {
-                    case 1:
-                        Toast.makeText(getContext() , "1"+position,Toast.LENGTH_LONG).show();
-                        break;
-                    case 2:
-                        Toast.makeText(getContext() , "2"+position,Toast.LENGTH_LONG).show();
-                        break;
+        // Create the arrays
+        this.Menu = getResources().getStringArray(R.array.boardsmenu);
 
-                    case  3:
-                        Toast.makeText(getContext() , "2"+position,Toast.LENGTH_LONG).show();
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1,Menu);
+        listView.setAdapter(itemsAdapter);
+
+
+        listView    .setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> list, View v, int pos, long id) {
+                switch (pos) {
+                    case 0:
+                        Toast.makeText(getContext(),"0",Toast.LENGTH_LONG).show();
+                        break;
+                    case 1 :
+                        Toast.makeText(getContext(),"1",Toast.LENGTH_LONG).show();
                         break;
 
 
-                } }});
 
+
+                }
+
+
+            }
+        });
 
 
 

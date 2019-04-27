@@ -84,6 +84,12 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
+    public void Gosignup(View view ) {
+        Intent intent =new Intent(getApplicationContext() , SignupActivity.class);
+        startActivity(intent);
+
+    }
+
 
     public static boolean isValidEmail(CharSequence target) {
         return (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches());
