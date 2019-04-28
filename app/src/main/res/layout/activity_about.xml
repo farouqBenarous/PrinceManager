@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prince Manager is a web-based list-making application originally made
+        by Fog Creek Software in 2011, that was spun out to form the basis of a separate company in 2014
+        and later sold to Atlassian in January 2017.[2] The company is based in New York City."
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>
