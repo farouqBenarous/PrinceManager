@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsActivity"
+    android:orientation="vertical"
+    >
+
+
+    <ViewFlipper
+        android:id="@+id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:autoStart="true"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/ImageFeature1"
+                android:layout_width="match_parent"
+                android:layout_height="203dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="150dp"
+                />
+
+            <TextView
+                android:id="@+id/FeatureText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you want to lift yourself up, lift up someone else. – Booker T. Washington "
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/ImageFeature2"
+                android:layout_width="match_parent"
+                android:layout_height="203dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="150dp"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:id="@+id/FeatureText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability. – Patrick Lencioni"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/ImageFeature3"
+                android:layout_width="match_parent"
+                android:layout_height="203dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="150dp"
+                android:src="@mipmap/ic_shortcut_navigate_next"
+                />
+
+            <TextView
+                android:id="@+id/FeatureText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alone we can do so little; together we can do so much. – Helen Keller"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </ViewFlipper>
+
+</LinearLayout>

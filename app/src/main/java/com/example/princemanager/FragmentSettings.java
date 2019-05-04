@@ -2,7 +2,9 @@ package com.example.princemanager;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Telephony;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -42,17 +44,20 @@ public class FragmentSettings extends Fragment {
             public void onItemClick(AdapterView<?> list, View v, int pos, long id) {
                 switch (pos) {
                     case 0:
-                        Toast.makeText(getContext(),"0",Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(getContext() , AppSettingsActivity.class);
+                        startActivity(intent);
                         break;
                     case 1 :
-                        Intent intent = new Intent(getContext(),AboutActivity.class);
+                        intent = new Intent(getContext(), AboutActivity.class);
                         startActivity(intent);
                         break;
                     case 2 :
-                        Toast.makeText(getContext(),"1",Toast.LENGTH_LONG).show();
+                        intent = new Intent(getContext(), ContactUsActivity.class);
+                        startActivity(intent);
                         break;
                     case 3 :
-                        Toast.makeText(getContext(),"1",Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=PackageName")));
+
                         break;
 
 

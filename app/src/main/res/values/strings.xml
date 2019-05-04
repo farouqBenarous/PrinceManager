@@ -38,4 +38,11 @@
         <item>My teams</item>
     </string-array>
 
+    <string-array name="appsettings">
+        <item>Language</item>
+        <item>Setting 1</item>
+        <item>Setting 2</item>
+    </string-array>
+
+
 </resources>

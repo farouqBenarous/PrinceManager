@@ -27,6 +27,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array appsettings
 array boardsmenu
 array settingsmenu
 attr actionBarDivider
@@ -1260,6 +1261,7 @@ id add
 id alertTitle
 id all
 id always
+id appsetings
 id async
 id auto
 id barrier
@@ -1513,11 +1515,15 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout action_bar
+layout activity_about
+layout activity_app_settings
+layout activity_contact_us
 layout activity_firstpage
 layout activity_login
 layout activity_main
 layout activity_profile
 layout activity_profile_edit
+layout activity_rate_app
 layout activity_signup
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
