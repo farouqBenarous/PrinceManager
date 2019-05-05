@@ -25,27 +25,25 @@ public class AppSettingsActivity extends AppCompatActivity {
         // Create the arrays
         this.Menu = getResources().getStringArray(R.array.appsettings);
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1,Menu);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1  ,Menu);
         listView.setAdapter(itemsAdapter);
 
 
-        listView    .setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> list, View v, int pos, long id) {
                 switch (pos) {
                     case 0:
                         Toast.makeText(getApplicationContext(),"0",Toast.LENGTH_LONG).show();
                         break;
                     case 1 :
-                        Intent intent = new Intent(getApplicationContext(),AboutActivity.class);
-                        startActivity(intent);
-                        break;
-                    case 2 :
                         Toast.makeText(getApplicationContext(),"1",Toast.LENGTH_LONG).show();
                         break;
-                    case 3 :
+                    case 2 :
                         Toast.makeText(getApplicationContext(),"2",Toast.LENGTH_LONG).show();
+                        break;
+                    case 3 :
+                        Toast.makeText(getApplicationContext(),"3",Toast.LENGTH_LONG).show();
                         break; }
-
             } } );
 
 

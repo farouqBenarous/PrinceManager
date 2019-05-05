@@ -26,9 +26,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar" >
-        <activity android:name="com.example.princemanager.RateAppActivity" />
-        <activity android:name="com.example.princemanager.AppSettingsActivity" />
-        <activity android:name="com.example.princemanager.ContactUsActivity" />
+        <activity
+            android:name="com.example.princemanager.AppSettingsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.princemanager.ContactUsActivity"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.princemanager.AboutActivity"
             android:theme="@style/AppTheme" />

@@ -159,7 +159,6 @@ attr civ_border_color
 attr civ_border_overlay
 attr civ_border_width
 attr civ_circle_background_color
-attr civ_fill_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1172,6 +1171,7 @@ drawable backgroundradiusitems
 drawable backgroundradiuswhite
 drawable backhroundbottom
 drawable bottom_nav_icon_color_selector
+drawable bruno
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1179,6 +1179,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable drop_down_shadow
+drawable farouk
 drawable ic_arrow_drop_down_black_24dp
 drawable ic_contact
 drawable ic_dashboard
@@ -1198,6 +1199,9 @@ drawable ic_next
 drawable ic_notifications
 drawable ic_person
 drawable ic_settings
+drawable joeo
+drawable kazim
+drawable mario
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1227,15 +1231,31 @@ id FeatureText1
 id FeatureText2
 id FeatureText3
 id FullName
+id Image1
+id Image2
+id Image3
+id Image4
+id Image5
 id ImageFeature1
 id ImageFeature2
 id ImageFeature3
 id META
 id NewPassword
 id Password
+id Person1Email
+id Person1Phone
+id Person2Email
+id Person2Phone
+id Person3Email
+id Person3Phone
+id Person4Email
+id Person4Phone
+id Person5Email
+id Person5Phone
 id PhoneNumber
 id SHIFT
 id SYM
+id Text1
 id UserName
 id action0
 id action_bar
@@ -1341,6 +1361,7 @@ id line1
 id line3
 id listMode
 id list_item
+id listtview
 id listviewboard
 id listviewsettings
 id location
@@ -1372,7 +1393,6 @@ id password
 id percent
 id pin
 id profile_layout
-id profilepic
 id profleimage
 id progress_circular
 id progress_horizontal
@@ -1523,7 +1543,6 @@ layout activity_login
 layout activity_main
 layout activity_profile
 layout activity_profile_edit
-layout activity_rate_app
 layout activity_signup
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1546,6 +1565,7 @@ layout fragment_fragment_settings
 layout fragment_notifaction
 layout item_contact
 layout item_notification
+layout listview
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -2179,7 +2199,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipStartPadding chipStrokeColor chipStrokeWidth closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible hideMotionSpec iconEndPadding iconStartPadding rippleColor showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
-styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color civ_fill_color
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

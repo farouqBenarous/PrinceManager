@@ -26,14 +26,17 @@
             >
 
 
-            <ImageView
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/Image1"
                 android:layout_width="match_parent"
                 android:layout_height="203dp"
+                android:src="@drawable/mario"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/mario"
-                />
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
 
             <TextView
                 android:id="@+id/Person1Email"
@@ -46,7 +49,7 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 />
 
             <TextView
@@ -60,7 +63,6 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
                 />
 
         </LinearLayout>
@@ -73,15 +75,17 @@
             >
 
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/Image2"
                 android:layout_width="match_parent"
                 android:layout_height="203dp"
+                android:src="@drawable/bruno"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/bruno"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
 
-                />
 
             <TextView
                 android:id="@+id/Person2Email"
@@ -94,7 +98,7 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 />
 
 
@@ -109,7 +113,7 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
+
                 />
 
 
@@ -123,14 +127,17 @@
             >
 
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/Image3"
                 android:layout_width="match_parent"
                 android:layout_height="203dp"
+                android:src="@drawable/joeo"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/joeo"
-                />
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
 
             <TextView
                 android:id="@+id/Person3Email"
@@ -143,7 +150,7 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 />
             <TextView
                 android:id="@+id/Person3Phone"
@@ -156,7 +163,6 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
                 />
 
 
@@ -170,15 +176,17 @@
 
             >
 
-
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/Image4"
                 android:layout_width="match_parent"
                 android:layout_height="203dp"
+                android:src="@drawable/farouk"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/farouk"
-                />
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
 
             <TextView
                 android:id="@+id/Person4Email"
@@ -191,8 +199,7 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                />
+                android:layout_marginTop="10dp" />
 
 
             <TextView
@@ -206,7 +213,6 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
                 />
 
 
@@ -220,14 +226,17 @@
             >
 
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/Image5"
                 android:layout_width="match_parent"
                 android:layout_height="203dp"
+                android:src="@drawable/kazim"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/kazim"
-                />
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
 
             <TextView
                 android:id="@+id/Person5Email"
@@ -240,7 +249,7 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 />
 
 
@@ -255,7 +264,6 @@
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
                 />
 
 
@@ -263,5 +271,41 @@
 
 
     </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:onClick="Privous"
+            android:rotation="180"
+            android:src="@drawable/ic_next"
+            android:text="Privous"
+            android:background="@color/colorPrimary"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:onClick="Next"
+            android:src="@drawable/ic_next"
+            android:text="next"
+            android:background="@color/colorPrimary"
+
+            />
+    </LinearLayout>
+
 
 </LinearLayout>

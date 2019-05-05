@@ -20,12 +20,12 @@
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/64f92cf75fcf9c92c83ebd3f81c29971/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
-    },
-    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_activity_app_settings.xml.flat",
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/layout/activity_app_settings.xml"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
+        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/64f92cf75fcf9c92c83ebd3f81c29971/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -116,16 +116,16 @@
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -186,6 +186,10 @@
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-xhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable_kazim.jpg.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/drawable/kazim.jpg"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
@@ -480,12 +484,12 @@
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_spinner_list_item.xml.flat",
-        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/nice-spinner-1.3.8.aar/399d95d1e03d564f39319064832a781d/res/layout/spinner_list_item.xml"
-    },
-    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable_backhroundbottom.xml.flat",
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/drawable/backhroundbottom.xml"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_spinner_list_item.xml.flat",
+        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/nice-spinner-1.3.8.aar/399d95d1e03d564f39319064832a781d/res/layout/spinner_list_item.xml"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_logo_round.xml.flat",
@@ -852,10 +856,6 @@
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_next.xml"
     },
     {
-        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_activity_rate_app.xml.flat",
-        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/layout/activity_rate_app.xml"
-    },
-    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
@@ -916,12 +916,12 @@
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-xxhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_slideshow.xml.flat",
-        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_slideshow.xml"
-    },
-    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/695a9df3c20e8e294589226ad80a6159/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_slideshow.xml.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_slideshow.xml"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
@@ -996,12 +996,12 @@
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_activity_contact_us.xml.flat",
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/layout/activity_contact_us.xml"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1146,6 +1146,10 @@
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_inbox.png.flat",
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-hdpi/ic_inbox.png"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable_bruno.jpg.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/drawable/bruno.jpg"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1332,12 +1336,12 @@
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-ldpi/ic_notifications.png"
     },
     {
-        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_settings.png.flat",
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-hdpi/ic_settings.png"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_abc_search_view.xml.flat",
@@ -1622,6 +1626,10 @@
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_menu_manage.xml.flat",
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_menu_manage.xml"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable_joeo.jpg.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/drawable/joeo.jpg"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1964,6 +1972,10 @@
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_listview.xml.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/layout/listview.xml"
+    },
+    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_settings.xml.flat",
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_settings.xml"
     },
@@ -2212,6 +2224,10 @@
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
     },
     {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable_farouk.jpg.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/drawable/farouk.jpg"
+    },
+    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
     },
@@ -2438,6 +2454,10 @@
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_design_navigation_item_header.xml.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/64f92cf75fcf9c92c83ebd3f81c29971/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable_mario.jpg.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/drawable/mario.jpg"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",

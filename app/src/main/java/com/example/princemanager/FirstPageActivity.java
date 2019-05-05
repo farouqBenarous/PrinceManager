@@ -80,7 +80,6 @@ public class FirstPageActivity extends AppCompatActivity {
         viewFlipper.setOutAnimation(this, R.anim.slide_out_left);
         viewFlipper.showPrevious();
 
-
     }
 
 

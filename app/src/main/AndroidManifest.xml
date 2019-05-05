@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".AppSettingsActivity" android:theme="@style/AppTheme" />
-        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".ContactUsActivity" android:theme="@style/AppTheme" />
         <activity
             android:name=".AboutActivity"
             android:theme="@style/AppTheme" />

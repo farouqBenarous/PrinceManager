@@ -25,11 +25,18 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        profilepic = (CircleImageView) findViewById(R.id.Image1);
         imageheader = (ImageView) findViewById(R.id.header_cover_image);
-        profilepic = (CircleImageView) findViewById(R.id.profilepic);
         FulName = (TextView) findViewById(R.id.fullname);
         Username = (TextView) findViewById(R.id.username);
         Location = (TextView) findViewById(R.id.location);
+
+        profilepic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }});
 
 
 
