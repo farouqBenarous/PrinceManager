@@ -15,10 +15,15 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
 
 import org.angmarch.views.NiceSpinner;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -46,8 +51,6 @@ public class SignupActivity extends AppCompatActivity {
         ConfirmPassword = (EditText) findViewById(R.id.ConfirmPassword);
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
 
-
-
         niceSpinner = (NiceSpinner) findViewById(R.id.nice_spinner);
          dataset = new LinkedList<>(Arrays.asList("Male", "Female"));
         niceSpinner.attachDataSource(dataset);
@@ -55,7 +58,7 @@ public class SignupActivity extends AppCompatActivity {
 
     }
 
-    public void Signup (View view) {
+    public void Signup (View view) throws JSONException {
         TextEmail = String.valueOf(Email.getText());
         TextFullName = String.valueOf(FullName.getText());
         TextUserName = String.valueOf(UserName.getText());
@@ -122,20 +125,48 @@ public class SignupActivity extends AppCompatActivity {
             return;
         }
 
-        if (! TextConfirmPassword.equals(TextPassword)) {
+        if (!TextConfirmPassword.equals(TextPassword)) {
             Password.setError("The Password does't match ");
             progressBar.setVisibility(View.INVISIBLE);
             return ;
         }
+        // Instantiate the RequestQueue.
+        final RequestQueue queue = Volley.newRequestQueue(this);
+        final String url ="https://calvin.estig.ipb.pt/projectman/api/Signup";
+        final ModelUser user = new ModelUser("username1" ,"user1") ;
+        Gson gson = new Gson();
+        String json = gson.toJson(user);
 
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-        startActivity(intent);
+        JsonObjectRequest jsonObjectReques = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(json), new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                Toast.makeText(getApplicationContext(),"Response is: " + String.valueOf(response),Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+
+            }
+        } , new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+                Toast.makeText(getApplicationContext(),"That didn't work!" , Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),error.getMessage().toString() , Toast.LENGTH_LONG).show();
+
+
+
+            }
+        });
+// Add the request to the RequestQueue.
+        queue.add(jsonObjectReques);
+
+
 
     }
 
     public static boolean isValidEmail(CharSequence target) {
         return (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches());
     }
+
     public static boolean isValidName (String Name) {
         Pattern pattern = Pattern.compile(new String ("^[a-zA-Z\\s]*$"));
         Matcher matcher = pattern.matcher(Name);

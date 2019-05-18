@@ -10,6 +10,7 @@ public class ModelUser {
     private  String email ;
     private  String phoneNumber;
     private String imageuri;
+    private  String password;
 
 
     public ModelUser (String id , String fullname , String username , String email , String phoneNumber , String imageuri) {
@@ -19,6 +20,12 @@ public class ModelUser {
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.imageuri = imageuri;
+    }
+
+    public  ModelUser (String username , String password ) {
+        this.username = username;
+        this.password = password;
+
     }
 
     public ModelUser (String id , String fullname , String username , String email , String phoneNumber) {
@@ -89,5 +96,13 @@ public class ModelUser {
         }
 
         return listusers;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
