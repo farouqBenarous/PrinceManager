@@ -38,6 +38,7 @@ public class SignupActivity extends AppCompatActivity {
     EditText Email,FullName,UserName,Phonenumber,Password,ConfirmPassword;
     String TextEmail,TextFullName,TextUserName,TextPhonenumber,TextPassword,TextConfirmPassword;
     ProgressBar progressBar;
+    int spin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +55,17 @@ public class SignupActivity extends AppCompatActivity {
         niceSpinner = (NiceSpinner) findViewById(R.id.nice_spinner);
          dataset = new LinkedList<>(Arrays.asList("Male", "Female"));
         niceSpinner.attachDataSource(dataset);
+        niceSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                spin = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
 
     }
@@ -91,7 +103,6 @@ public class SignupActivity extends AppCompatActivity {
             progressBar.setVisibility(View.INVISIBLE);
             return;
         }
-
 
 
         if (TextUserName.isEmpty() || TextUserName == null) {
@@ -132,10 +143,21 @@ public class SignupActivity extends AppCompatActivity {
         }
         // Instantiate the RequestQueue.
         final RequestQueue queue = Volley.newRequestQueue(this);
-        final String url ="https://calvin.estig.ipb.pt/projectman/api/Signup";
-        final ModelUser user = new ModelUser("username1" ,"user1") ;
+        final String url ="https://calvin.estig.ipb.pt/projectman/api/Users";
+        final ModelUser user = new ModelUser("0",dataset.get(spin),TextFullName,TextUserName,TextEmail,TextPhonenumber) ;
         Gson gson = new Gson();
         String json = gson.toJson(user);
+
+        /*{
+
+    "Name": "User54543",
+    "Email": "user516@princemanager.com",
+    "BornDate": "2001-01-01T00:00:00",
+    "Phone": "11111111",
+    "Username": "username16",
+    "Password": "user6",
+    "Gender": "m"
+           } */
 
         JsonObjectRequest jsonObjectReques = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(json), new Response.Listener<JSONObject>() {
             @Override
@@ -156,7 +178,7 @@ public class SignupActivity extends AppCompatActivity {
 
             }
         });
-// Add the request to the RequestQueue.
+        // Add the request to the RequestQueue.
         queue.add(jsonObjectReques);
 
 

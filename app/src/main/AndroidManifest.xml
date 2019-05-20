@@ -6,6 +6,9 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
 
     <application
         android:allowBackup="true"
@@ -21,8 +24,8 @@
         <activity
             android:name=".AboutActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".ProfileEditActivity" />
-        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ProfileEditActivity" android:theme="@style/AppTheme" />
+        <activity android:name=".ProfileActivity" android:theme="@style/AppTheme" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"

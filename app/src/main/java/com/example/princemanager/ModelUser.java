@@ -8,18 +8,30 @@ public class ModelUser {
     private String fullname;
     private  String username;
     private  String email ;
+    private String Gender;
     private  String phoneNumber;
     private String imageuri;
     private  String password;
 
 
-    public ModelUser (String id , String fullname , String username , String email , String phoneNumber , String imageuri) {
+    public ModelUser (String id ,String Gender , String fullname , String username , String email , String phoneNumber , String imageuri) {
         this.id = id;
         this.fullname = fullname;
+        this.Gender = Gender;
         this.username = username;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.imageuri = imageuri;
+    }
+
+     // Signup constructor without uri
+    public ModelUser (String id ,String Gender , String fullname , String username , String email , String phoneNumber) {
+        this.id = id;
+        this.fullname = fullname;
+        this.Gender = Gender;
+        this.username = username;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
     }
 
     public  ModelUser (String username , String password ) {
@@ -104,5 +116,13 @@ public class ModelUser {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getGender() {
+        return Gender;
+    }
+
+    public void setGender(String gender) {
+        Gender = gender;
     }
 }

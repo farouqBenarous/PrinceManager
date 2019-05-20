@@ -77,13 +77,14 @@ public class LoginActivity extends AppCompatActivity {
         // method to check if the  password is correct or not send an http request and return the hash and compare it
 
         if (checked) {
+
             // Create a token in an sqlite database
         }
 
         progressBar.setVisibility(View.INVISIBLE);
         // Instantiate the RequestQueue.
         final RequestQueue queue = Volley.newRequestQueue(this);
-        final String url ="https://calvin.estig.ipb.pt/projectman/api/Login";
+        final String url ="https://194.210.91.80:57093/api/Login";
         final ModelUser user = new ModelUser("username1" ,"user1") ;
         Gson gson = new Gson();
         String json = gson.toJson(user);
