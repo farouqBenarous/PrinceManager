@@ -1,5 +1,7 @@
 package com.example.princemanager;
 
+import android.net.Uri;
+
 import java.util.ArrayList;
 
 public class ModelUser {
@@ -10,11 +12,12 @@ public class ModelUser {
     private  String email ;
     private String Gender;
     private  String phoneNumber;
-    private String imageuri;
+    private Uri imageuri;
     private  String password;
+    private  String birthdate;
 
 
-    public ModelUser (String id ,String Gender , String fullname , String username , String email , String phoneNumber , String imageuri) {
+    public ModelUser (String id ,String Gender , String fullname , String username , String email , String phoneNumber , Uri imageuri) {
         this.id = id;
         this.fullname = fullname;
         this.Gender = Gender;
@@ -25,15 +28,18 @@ public class ModelUser {
     }
 
      // Signup constructor without uri
-    public ModelUser (String id ,String Gender , String fullname , String username , String email , String phoneNumber) {
+    public ModelUser (String id ,String Gender , String fullname , String username , String email , String phoneNumber ,String birthdate , String password) {
         this.id = id;
         this.fullname = fullname;
         this.Gender = Gender;
         this.username = username;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.birthdate = birthdate ;
+        this.password = password;
     }
 
+     // Login Constructor
     public  ModelUser (String username , String password ) {
         this.username = username;
         this.password = password;
@@ -124,5 +130,13 @@ public class ModelUser {
 
     public void setGender(String gender) {
         Gender = gender;
+    }
+
+    public Uri getImageuri() {
+        return imageuri;
+    }
+
+    public void setImageuri(Uri imageuri) {
+        this.imageuri = imageuri;
     }
 }

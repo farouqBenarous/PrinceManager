@@ -69,8 +69,39 @@
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     android:background="@drawable/backgroundradiuswhite"
-
         />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/backgroundradiuswhite"
+        />
+
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/month"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/backgroundradiuswhite"
+    />
+
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/backgroundradiuswhite"
+        />
+
+</LinearLayout>
+
 
 
     <EditText

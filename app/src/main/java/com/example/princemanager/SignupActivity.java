@@ -33,12 +33,12 @@ import java.util.regex.Pattern;
 
 
 public class SignupActivity extends AppCompatActivity {
-    NiceSpinner niceSpinner;
-    List<String> dataset;
+    NiceSpinner niceSpinner,dayspin,monthspin,yearspin;
+    List<String> datasetgender , datasetday , datasetmonth , datasetyear  ;
     EditText Email,FullName,UserName,Phonenumber,Password,ConfirmPassword;
     String TextEmail,TextFullName,TextUserName,TextPhonenumber,TextPassword,TextConfirmPassword;
     ProgressBar progressBar;
-    int spin;
+    int spin,day,month,year;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,10 +51,13 @@ public class SignupActivity extends AppCompatActivity {
         Password = (EditText) findViewById(R.id.Password);
         ConfirmPassword = (EditText) findViewById(R.id.ConfirmPassword);
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
-
         niceSpinner = (NiceSpinner) findViewById(R.id.nice_spinner);
-         dataset = new LinkedList<>(Arrays.asList("Male", "Female"));
-        niceSpinner.attachDataSource(dataset);
+        dayspin = (NiceSpinner) findViewById(R.id.day);
+        monthspin = (NiceSpinner) findViewById(R.id.month);
+        yearspin = (NiceSpinner) findViewById(R.id.year);
+
+         datasetgender = new LinkedList<>(Arrays.asList("Male", "Female"));
+        niceSpinner.attachDataSource(datasetgender);
         niceSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -66,6 +69,60 @@ public class SignupActivity extends AppCompatActivity {
 
             }
         });
+
+
+        datasetday  = new LinkedList<>(Arrays.asList("1"));
+        for (int i =1 ; i <= 31 ;i++) { datasetday.add(String.valueOf(i));}
+        dayspin.attachDataSource(datasetday);
+        dayspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                day = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+
+        datasetmonth = new LinkedList<>(Arrays.asList("1"));
+        for (int i =1 ; i <= 11 ;i++) { datasetmonth.add(String.valueOf(i));}
+        monthspin.attachDataSource(datasetmonth);
+        monthspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                month = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+
+
+        datasetyear = new LinkedList<>(Arrays.asList("1960"));
+        for (int i =1961 ; i <= 2019 ;i++) { datasetyear.add(String.valueOf(i)); }
+        yearspin.attachDataSource(datasetyear);
+        yearspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                year = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+
 
 
     }
@@ -117,11 +174,11 @@ public class SignupActivity extends AppCompatActivity {
             return;
         }
 
-        if (PhoneNumberUtils.isGlobalPhoneNumber(TextPhonenumber)) {
+        /*if (PhoneNumberUtils.isGlobalPhoneNumber(TextPhonenumber)) {
             Phonenumber.setError("Phone number is not Valid ");
             progressBar.setVisibility(View.INVISIBLE);
             return;
-        }
+        } */
 
 
         if (TextPassword.isEmpty() || TextPassword == null) {
@@ -141,25 +198,38 @@ public class SignupActivity extends AppCompatActivity {
             progressBar.setVisibility(View.INVISIBLE);
             return ;
         }
+
+
         // Instantiate the RequestQueue.
         final RequestQueue queue = Volley.newRequestQueue(this);
         final String url ="https://calvin.estig.ipb.pt/projectman/api/Users";
-        final ModelUser user = new ModelUser("0",dataset.get(spin),TextFullName,TextUserName,TextEmail,TextPhonenumber) ;
+        String birthdate = day+"/"+month+"/"+year ;
+
+        final ModelUser user = new ModelUser("0",datasetgender.get(spin),TextFullName,TextUserName,TextEmail,TextPhonenumber ,birthdate , TextPassword) ;
         Gson gson = new Gson();
         String json = gson.toJson(user);
 
-        /*{
+        final JSONObject User = new JSONObject();
+        User.put("name",TextFullName);
+        User.put("email",TextEmail);
+        User.put("bornDate",birthdate);
+        User.put("phone",TextPhonenumber);
+        User.put("username",TextUserName);
+        if (datasetgender.get(spin).equals("Male")) {        User.put("gender","m"); }
+        else User.put("gender","f");
+        User.put("Password",TextPassword);
+       /* {
+            "name": "User21",
+                "email": "user133@princemanager.com                 ",
+                "bornDate": "2011-01-01T00:00:00",
+                "phone": "11111111       ",
+                "username": "username232",
+                "password": "asdaasda",
+                "gender": "m",
+                "date_add": "2011-01-01T00:00:00"
+        } */
 
-    "Name": "User54543",
-    "Email": "user516@princemanager.com",
-    "BornDate": "2001-01-01T00:00:00",
-    "Phone": "11111111",
-    "Username": "username16",
-    "Password": "user6",
-    "Gender": "m"
-           } */
-
-        JsonObjectRequest jsonObjectReques = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(json), new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonObjectReques = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(String.valueOf(User)), new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 Toast.makeText(getApplicationContext(),"Response is: " + String.valueOf(response),Toast.LENGTH_LONG).show();
@@ -171,8 +241,10 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
 
+
                 Toast.makeText(getApplicationContext(),"That didn't work!" , Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),error.getMessage().toString() , Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),String.valueOf(User), Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),error.toString() , Toast.LENGTH_LONG).show();
 
 
 

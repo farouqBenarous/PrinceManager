@@ -1307,6 +1307,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id day
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1370,6 +1371,7 @@ id media_actions
 id message
 id middle
 id mini
+id month
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1487,6 +1489,7 @@ id visible
 id withText
 id wrap
 id wrap_content
+id year
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration

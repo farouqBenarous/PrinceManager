@@ -84,10 +84,12 @@ public class LoginActivity extends AppCompatActivity {
         progressBar.setVisibility(View.INVISIBLE);
         // Instantiate the RequestQueue.
         final RequestQueue queue = Volley.newRequestQueue(this);
-        final String url ="https://194.210.91.80:57093/api/Login";
+        final String url ="https://calvin.estig.ipb.pt/projectman/api/Login";
         final ModelUser user = new ModelUser("username1" ,"user1") ;
         Gson gson = new Gson();
         String json = gson.toJson(user);
+
+
 
         JsonObjectRequest jsonObjectReques = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(json), new Response.Listener<JSONObject>() {
             @Override
