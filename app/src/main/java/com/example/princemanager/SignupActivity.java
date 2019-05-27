@@ -1,6 +1,9 @@
 package com.example.princemanager;
 
+import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
@@ -209,17 +212,18 @@ public class SignupActivity extends AppCompatActivity {
         Gson gson = new Gson();
         String json = gson.toJson(user);
 
-        final JSONObject User = new JSONObject();
-        User.put("name",TextFullName);
-        User.put("email",TextEmail);
-        User.put("bornDate",birthdate);
-        User.put("phone",TextPhonenumber);
-        User.put("username",TextUserName);
-        if (datasetgender.get(spin).equals("Male")) {        User.put("gender","m"); }
-        else User.put("gender","f");
-        User.put("Password",TextPassword);
+        final JSONObject U = new JSONObject();
+        U.put("name",TextFullName);
+        U.put("email",TextEmail);
+        U.put("bornDate",birthdate);
+        U.put("phone",TextPhonenumber);
+        U.put("username",TextUserName);
+        if (datasetgender.get(spin).equals("Male")) {        U.put("gender","m"); }
+        else U.put("gender","f");
+        U.put("Password",TextPassword);
+
        /* {
-            "name": "User21",
+                "name": "User21",
                 "email": "user133@princemanager.com                 ",
                 "bornDate": "2011-01-01T00:00:00",
                 "phone": "11111111       ",
@@ -229,11 +233,37 @@ public class SignupActivity extends AppCompatActivity {
                 "date_add": "2011-01-01T00:00:00"
         } */
 
-        JsonObjectRequest jsonObjectReques = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(String.valueOf(User)), new Response.Listener<JSONObject>() {
+        TabledbHelper dbHelper = new TabledbHelper(getApplicationContext());
+        // Gets the data repository in write mode
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+         // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(TableUser.FeedEntry.COLUMN_NAME_TITLE, "user1");
+        values.put(TableUser.FeedEntry.COLUMN_NAME_SUBTITLE, "user1");
+        long newRowId = db.insert(TableUser.FeedEntry.TABLE_NAME, null, values);
+
+
+// Insert the new row, returning the primary key value of the new row
+
+
+        JsonObjectRequest jsonObjectReques = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(String.valueOf(U)), new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Toast.makeText(getApplicationContext(),"Response is: " + String.valueOf(response),Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Response is: ",Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                try {
+                    intent.putExtra("name",String.valueOf(response.get("Name")));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    intent.putExtra("email",String.valueOf(response.get("Email")));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+
                 startActivity(intent);
 
             }
@@ -243,7 +273,6 @@ public class SignupActivity extends AppCompatActivity {
 
 
                 Toast.makeText(getApplicationContext(),"That didn't work!" , Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),String.valueOf(User), Toast.LENGTH_LONG).show();
                 Toast.makeText(getApplicationContext(),error.toString() , Toast.LENGTH_LONG).show();
 
 

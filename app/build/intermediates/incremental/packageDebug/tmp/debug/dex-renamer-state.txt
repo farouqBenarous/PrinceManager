@@ -1,4 +1,4 @@
-#Thu May 23 19:33:32 WEST 2019
+#Mon May 27 19:17:08 WEST 2019
 base.0=/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex
