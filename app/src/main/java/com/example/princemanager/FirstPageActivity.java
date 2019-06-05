@@ -1,6 +1,7 @@
 package com.example.princemanager;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,10 +20,13 @@ public class FirstPageActivity extends AppCompatActivity {
     ViewFlipper viewFlipper;
     ProgressBar progressBar;
     ImageView imageView1,imageView2,imageView3;
+    TabledbHelper dbHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstpage);
+        dbHelper = new TabledbHelper(this) ;
 
         viewFlipper = findViewById(R.id.viewSwitcher);
         progressBar = (ProgressBar ) findViewById(R.id.progressbar);
@@ -51,6 +55,12 @@ public class FirstPageActivity extends AppCompatActivity {
                 .into(imageView3);
 
         // Checkif the token exist in the database or not
+
+        if (!dbHelper.isEmpty()) {
+             Intent intent = new Intent(getApplicationContext() , MainActivity.class);
+             startActivity(intent);
+
+        }
 
     }
 

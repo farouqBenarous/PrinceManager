@@ -1,6 +1,7 @@
 package com.example.princemanager;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -35,6 +36,8 @@ public class LoginActivity extends AppCompatActivity {
     CheckBox checkBox;
     ProgressBar progressBar;
     boolean checked ;
+    TabledbHelper dbHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,8 @@ public class LoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
         checkBox = (CheckBox) findViewById(R.id.checkbox);
         progressBar = (ProgressBar)  findViewById(R.id.progressbar) ;
+        dbHelper = new TabledbHelper(this) ;
+
 
 
     }
@@ -62,12 +67,13 @@ public class LoginActivity extends AppCompatActivity {
             progressBar.setVisibility(View.INVISIBLE);
             return;
         }
+        /*
         if (!isValidEmail(EmailText) ) {
 
            email.setError("You have To set a Correct Email !");
             progressBar.setVisibility(View.INVISIBLE);
-            return;
-        }
+             return;
+        } */
         if (PasswordText.isEmpty() || PasswordText == null) {
             password.setError("You Have To set the password !");
             progressBar.setVisibility(View.INVISIBLE);
@@ -76,10 +82,6 @@ public class LoginActivity extends AppCompatActivity {
 
         // method to check if the  password is correct or not send an http request and return the hash and compare it
 
-        if (checked) {
-
-            // Create a token in an sqlite database
-        }
 
         progressBar.setVisibility(View.INVISIBLE);
         // Instantiate the RequestQueue.
@@ -91,10 +93,48 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
-        JsonObjectRequest jsonObjectReques = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(json), new Response.Listener<JSONObject>() {
+       /* Send
+        {
+            "username": "aaaa1aa",
+                "password": "aaaaa1a"
+
+        }
+        */
+
+
+       /*recieved
+        {
+    "Id": 90,
+    "Name": "aaaaaa1                       ",
+    "Email": "aaaaa1a@princsemanager.com              ",
+    "BornDate": "2011-01-01T00:00:00",
+    "Phone": "545454154      ",
+    "Username": "aaaa1aa        ",
+    "Password": "aaaaa1a                  ",
+    "Gender": "m"
+} */
+        final JSONObject U = new JSONObject();
+        U.put("username",EmailText);
+        U.put("password",PasswordText) ;
+
+        JsonObjectRequest jsonObjectReques = new JsonObjectRequest(Request.Method.POST, url, U, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 Toast.makeText(getApplicationContext(),"Response is: " + String.valueOf(response),Toast.LENGTH_LONG).show();
+                Cursor res = dbHelper.getAllData();
+
+                if (checked) {
+
+                    boolean isInserted = false;
+                    try {
+                        dbHelper.deleteData();
+                        isInserted = dbHelper.insert(response.getString("Id"),response.getString("Name"),
+                                response.getString("Username"),response.getString("Email") ,response.getString("Gender") ,response.getString("Phone")
+                                ,response.getString("BornDate") ,response.getString("Password"));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
                 Intent intent = new Intent(getApplicationContext() , MainActivity.class);
                 startActivity(intent);
 

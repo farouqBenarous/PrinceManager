@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ProfileEditActivity"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     >
 
 
@@ -105,7 +106,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
                 android:textColor="@color/white"
-                android:text="Signup"
+                android:text="Save"
                 android:onClick="Save"
                 android:background="@drawable/backgroundradius"
                 />
