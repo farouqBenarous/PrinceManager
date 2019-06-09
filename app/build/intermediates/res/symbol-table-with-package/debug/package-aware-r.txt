@@ -1226,6 +1226,7 @@ id Birthdate
 id BottNav
 id CTRL
 id ConfirmPassword
+id CreationDate
 id Email
 id FUNCTION
 id FeatureText1
@@ -1400,9 +1401,12 @@ id profleimage
 id progress_circular
 id progress_horizontal
 id progressbar
+id projectname
+id projectowner
 id radio
 id recyclerContact
 id recyclerNotification
+id recyclerproject
 id right
 id right_icon
 id right_side
@@ -1547,6 +1551,8 @@ layout activity_login
 layout activity_main
 layout activity_profile
 layout activity_profile_edit
+layout activity_project_show_bigger
+layout activity_projects
 layout activity_signup
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1569,6 +1575,7 @@ layout fragment_fragment_settings
 layout fragment_notifaction
 layout item_contact
 layout item_notification
+layout item_project
 layout listview
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include

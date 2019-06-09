@@ -26,6 +26,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar" >
+        <activity android:name="com.example.princemanager.ProjectShowBiggerActivity" />
+        <activity
+            android:name="com.example.princemanager.projectsActivity"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.princemanager.AppSettingsActivity"
             android:theme="@style/AppTheme" />

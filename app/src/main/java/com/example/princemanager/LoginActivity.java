@@ -121,9 +121,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 Toast.makeText(getApplicationContext(),"Response is: " + String.valueOf(response),Toast.LENGTH_LONG).show();
-                Cursor res = dbHelper.getAllData();
-
-                if (checked) {
+                dbHelper.deleteData();
 
                     boolean isInserted = false;
                     try {
@@ -134,7 +132,7 @@ public class LoginActivity extends AppCompatActivity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                }
+
                 Intent intent = new Intent(getApplicationContext() , MainActivity.class);
                 startActivity(intent);
 

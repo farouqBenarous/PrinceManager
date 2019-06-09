@@ -259,7 +259,38 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:text="Team1 , Team 2"
+                    android:text="None"
+                    android:textStyle="bold|italic"
+                    android:textSize="25dp"
+
+
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My projects  : "
+                    android:textStyle="bold|italic"
+                    android:textSize="25dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/projects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="None"
                     android:textStyle="bold|italic"
                     android:textSize="25dp"
 

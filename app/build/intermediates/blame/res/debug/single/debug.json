@@ -164,6 +164,10 @@
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-hdpi/ic_next.png"
     },
     {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_activity_project_show_bigger.xml.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/layout/activity_project_show_bigger.xml"
+    },
+    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-hdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
@@ -1356,6 +1360,10 @@
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8da804967071e5e9ba94c950789fe251/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_activity_projects.xml.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/layout/activity_projects.xml"
+    },
+    {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_gallery.png.flat",
         "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/generated/res/pngs/debug/drawable-hdpi/ic_menu_gallery.png"
     },
@@ -2342,6 +2350,10 @@
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility.png.flat",
         "source": "/home/benarousfarouk/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/64f92cf75fcf9c92c83ebd3f81c29971/res/drawable-xxxhdpi-v4/design_ic_visibility.png"
+    },
+    {
+        "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/layout_item_project.xml.flat",
+        "source": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/src/main/res/layout/item_project.xml"
     },
     {
         "merged": "/home/benarousfarouk/AndroidStudioProjects/PrinceManager/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_contact.png.flat",

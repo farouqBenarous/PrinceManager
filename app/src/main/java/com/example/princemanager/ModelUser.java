@@ -100,22 +100,6 @@ public class ModelUser {
     }
 
 
-    private static int lastContactId = 0;
-
-    public static ArrayList<ModelUser> createContactsList(int numContacts) {
-        ArrayList<ModelUser> listusers = new ArrayList<ModelUser>();
-
-        for (int i = 1; i <= numContacts; i++) {
-            listusers.add(new ModelUser(String.valueOf(i) ,
-                    "farouk "+i,
-                    "Cr"+i ,
-                    "fa"+i+"@gmail.com",
-                    "0035193268609"+i ) );
-        }
-
-        return listusers;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -139,4 +123,30 @@ public class ModelUser {
     public void setImageuri(Uri imageuri) {
         this.imageuri = imageuri;
     }
+
+    public String getBirthdate() {
+        return birthdate;
+    }
+
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
+    }
+
+
+    private static int lastContactId = 0;
+
+    public static ArrayList<ModelUser>  createContactsList(int numContacts) {
+        ArrayList<ModelUser> listusers = new ArrayList<ModelUser>();
+
+        for (int i = 1; i <= numContacts; i++) {
+            listusers.add(new ModelUser(String.valueOf(i) ,
+                    "farouk "+i,
+                    "Cr"+i ,
+                    "fa"+i+"@gmail.com",
+                    "0035193268609"+i ) );
+        }
+
+        return listusers;
+    }
+
 }
