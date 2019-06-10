@@ -75,11 +75,14 @@ public class FragmentBoard extends Fragment {
                         startActivity(intent);
                         break;
                     case 1 :
-                        Toast.makeText(getContext(),"1",Toast.LENGTH_LONG).show();
+                        Intent intent2 = new Intent (getContext() ,TasksActivity.class );
+                        startActivity(intent2);
                         break;
 
                     case 2 :
-                        Toast.makeText(getContext(),"2",Toast.LENGTH_LONG).show();
+                        Intent intent1 = new Intent(getContext() , TeamsActivity.class);
+                        startActivity(intent1);
+
                         break;
 
                 }

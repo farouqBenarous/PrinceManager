@@ -34,15 +34,13 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfileActivity extends AppCompatActivity {
-     ImageView imageheader ;
+    ImageView imageheader ;
     CircleImageView profilepic;
-    TextView  FulName ,Username  , Email, Phonenumber, Gender , Birthday , Textviewteams ;
+    TextView  FulName ,Username  , Email, Phonenumber, Gender , Birthday , Textviewteams  , textviewprojects;
     String   TextFullName , TextUsername , Textemail , Textphonenumber ;
     TabledbHelper dbHelper;
     List<String> teams = new ArrayList<String>();
-
-
-
+    List<String> projects = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +58,7 @@ public class ProfileActivity extends AppCompatActivity {
         Gender = (TextView) findViewById(R.id.gender);
         Birthday = (TextView) findViewById(R.id.Birthdate);
         Textviewteams = (TextView) findViewById(R.id.teams) ;
+        textviewprojects = (TextView) findViewById(R.id.projects);
 
 
 
@@ -90,12 +89,45 @@ public class ProfileActivity extends AppCompatActivity {
                     String myteams = "";
 
                     for (int i =0 ; i <teams.size(); i++) {
-                        myteams  = myteams+ teams.get(i)+"   ";
+                        myteams  = myteams+ teams.get(i)+"";
                         Toast.makeText(getApplicationContext(),myteams , Toast.LENGTH_LONG).show();
+                    }
+                    Textviewteams.setText(myteams);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        } , new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),"That didn't work!" , Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),error.toString() , Toast.LENGTH_LONG).show();
+            }
+        });
+
+        String url1 = "https://calvin.estig.ipb.pt/projectman/api/Users/Projects/"+id;
+        JsonObjectRequest jsonObjectReques1 = new JsonObjectRequest(Request.Method.GET, url1, new JSONObject(), new Response.Listener<JSONObject>() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+
+                    JSONArray jArray = response.getJSONArray("ListProjects");
+                    for(int i = 0; i < jArray.length(); i++)
+                    {
+                        JSONObject obj =  jArray.getJSONObject(i);
+                        projects.add(obj.getString("Name"));
+                    }
+                    String myprojects = "";
+
+                    for (int i =0 ; i <projects.size(); i++) {
+                        myprojects  = myprojects+ projects.get(i)+",";
+                        Toast.makeText(getApplicationContext(),myprojects , Toast.LENGTH_LONG).show();
 
 
                     }
-                    Textviewteams.setText(myteams);
+                    textviewprojects.setText(myprojects);
 
 
                 } catch (JSONException e) {
@@ -113,6 +145,7 @@ public class ProfileActivity extends AppCompatActivity {
         });
         // Add the request to the RequestQueue.
         queue.add(jsonObjectReques);
+        queue.add(jsonObjectReques1);
 
     }
 

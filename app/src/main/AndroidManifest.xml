@@ -17,9 +17,9 @@
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".TasksActivity"></activity>
-        <activity android:name=".TeamsActivity" />
-        <activity android:name=".ProjectShowBiggerActivity" />
+        <activity android:name=".TasksActivity" android:theme="@style/AppTheme" ></activity>
+        <activity android:name=".TeamsActivity" android:theme="@style/AppTheme"  />
+        <activity android:name=".ProjectShowBiggerActivity" android:theme="@style/AppTheme" />
         <activity
             android:name=".projectsActivity"
             android:theme="@style/AppTheme" />

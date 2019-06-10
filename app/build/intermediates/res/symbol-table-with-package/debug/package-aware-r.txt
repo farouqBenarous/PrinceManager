@@ -1227,12 +1227,15 @@ id BottNav
 id CTRL
 id ConfirmPassword
 id CreationDate
+id Duration
 id Email
 id FUNCTION
 id FeatureText1
 id FeatureText2
 id FeatureText3
 id FullName
+id IdResponsible
+id IdTeam
 id Image1
 id Image2
 id Image3
@@ -1308,6 +1311,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id creationDate
 id custom
 id customPanel
 id day
@@ -1350,6 +1354,8 @@ id home
 id homeAsUp
 id icon
 id icon_group
+id idproject
+id idteam
 id ifRoom
 id image
 id inbox
@@ -1403,10 +1409,13 @@ id progress_horizontal
 id progressbar
 id projectname
 id projectowner
+id projects
 id radio
 id recyclerContact
 id recyclerNotification
 id recyclerproject
+id recyclertasks
+id recyclerteam
 id right
 id right_icon
 id right_side
@@ -1458,6 +1467,8 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id taskname
+id teamname
 id teams
 id text
 id text2
@@ -1554,6 +1565,8 @@ layout activity_profile_edit
 layout activity_project_show_bigger
 layout activity_projects
 layout activity_signup
+layout activity_tasks
+layout activity_teams
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1576,6 +1589,8 @@ layout fragment_notifaction
 layout item_contact
 layout item_notification
 layout item_project
+layout item_task
+layout item_team
 layout listview
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include

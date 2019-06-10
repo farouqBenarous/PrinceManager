@@ -46,12 +46,10 @@ public class projectsActivity extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 try {
-                    Toast.makeText(getApplicationContext(),String.valueOf(response) , Toast.LENGTH_LONG) .show();
                     JSONArray jArray = response.getJSONArray("ListProjects");
                     for(int i = 0; i < jArray.length(); i++)
                     {
                         JSONObject obj =  jArray.getJSONObject(i);
-                        Toast.makeText(getApplicationContext(),String.valueOf(obj) , Toast.LENGTH_LONG) .show();
                         ModelProject project = new ModelProject(obj.getString("Id") ,obj.getString("Name") , obj.getString("Description"),obj.getString("CreationDate") ,obj.getString("IdOwner") );
                         listprojects.add(project);
                     }
@@ -78,13 +76,6 @@ public class projectsActivity extends AppCompatActivity {
         });
         // Add the request to the RequestQueue.
         queue.add(jsonObjectReques);
-
-
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
 
 
     }

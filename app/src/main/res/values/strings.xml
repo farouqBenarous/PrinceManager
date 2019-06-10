@@ -35,7 +35,7 @@
     <string-array name="boardsmenu">
         <item>Projects</item>
         <item>Tasks</item>
-        <item>My teams</item>
+        <item>Teams</item>
     </string-array>
 
     <string-array name="appsettings">
